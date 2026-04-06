@@ -11,10 +11,8 @@
 {
     margin: 0;
     padding: 0;
-    /*font: inherit;*/
 }
 
-/* responsive images/videos */
 img,
 picture,
 svg,
@@ -34,7 +32,11 @@ video
 
     --linear-gradient: linear-gradient(135deg, hsl(0, 0%, 60%), hsl(0, 0%, 50%))
 }
-
+nav>ul{
+    display:flex;
+    gap:1.5rem;
+    list-style-type: none;
+}
 a
 {
     color: var(--primary-color-text);
@@ -54,6 +56,8 @@ body
 header
 {
     height: 48px;
+    display:flex;
+    align-items: center;
     background: var(--primary-color);
     box-shadow: 0 2px 4px var(--primary-color-shadow);
     position: sticky;
@@ -64,7 +68,7 @@ header
 main
 {
     display: flex;
-    max-width: 1100px;
+    max-width: 900px;
 }
 
 aside
@@ -79,6 +83,13 @@ aside
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
+}
+
+.containerHeader
+{
+    width:min(100%, 1100px);
+    display:flex;
+    justify-content: space-between;
 }
 
 /* header / hero */
@@ -260,10 +271,11 @@ hr
 
 footer
 {
+    width:min(100%, 1100px);
     text-align: center;
     color: #6c727f;
     font-size: 0.85rem;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid #eef2ff;
 }
