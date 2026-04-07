@@ -32,11 +32,14 @@ video
 
     --linear-gradient: linear-gradient(135deg, hsl(0, 0%, 60%), hsl(0, 0%, 50%))
 }
-nav>ul{
-    display:flex;
-    gap:1.5rem;
+
+nav>ul
+{
+    display: flex;
+    gap: 1.5rem;
     list-style-type: none;
 }
+
 a
 {
     color: var(--primary-color-text);
@@ -56,7 +59,7 @@ body
 header
 {
     height: 48px;
-    display:flex;
+    display: flex;
     align-items: center;
     background: var(--primary-color);
     box-shadow: 0 2px 4px var(--primary-color-shadow);
@@ -87,9 +90,10 @@ aside
 
 .containerHeader
 {
-    width:min(100%, 1100px);
-    display:flex;
+    width: min(100%, 1100px);
+    display: flex;
     justify-content: space-between;
+    padding-inline: 1rem;
 }
 
 /* header / hero */
@@ -271,7 +275,7 @@ hr
 
 footer
 {
-    width:min(100%, 1100px);
+    width: min(100%, 1100px);
     text-align: center;
     color: #6c727f;
     font-size: 0.85rem;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60.092731"
+   height="32"
+   viewBox="0 0 15.899535 8.466667"
+   version="1.1"
+   id="svg946"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="fnelin_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview948"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.6648912"
+     inkscape:cx="63.46106"
+     inkscape:cy="38.129594"
+     inkscape:window-width="1840"
+     inkscape:window-height="1244"
+     inkscape:window-x="1498"
+     inkscape:window-y="518"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     units="px"
+     width="64px"
+     height="52.4702px" />
+  <defs
+     id="defs943" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-46.241999,-12.095283)">
+    <g
+       id="g66103"
+       transform="matrix(0.40191121,0,0,0.40266666,20.541911,0.22271365)">
+      <rect
+         style="fill:#f2f2f2;fill-opacity:0.5;fill-rule:evenodd;stroke:#000000;stroke-width:0.0997765"
+         id="rect17159"
+         width="39.460045"
+         height="20.926714"
+         x="63.994579"
+         y="29.534746"
+         ry="3.2229061" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="67.260544"
+         y="39.199528"
+         id="text18802"><tspan
+           sodipodi:role="line"
+           id="tspan18800"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Verdana;-inkscape-font-specification:Verdana;stroke-width:0.264583"
+           x="67.260544"
+           y="39.199528">FNelin</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="69.709999"
+         y="48.460903"
+         id="text31784"><tspan
+           sodipodi:role="line"
+           id="tspan31782"
+           style="stroke-width:0.264583"
+           x="69.709999"
+           y="48.460903"><tspan
+   style="fill:#800000"
+   id="tspan39420">&lt;</tspan> <tspan
+   style="fill:#50162d"
+   id="tspan62230">/</tspan> <tspan
+   style="fill:#003380"
+   id="tspan47504">&gt;</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
