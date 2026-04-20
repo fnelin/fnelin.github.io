@@ -503,12 +503,6 @@
   .bg-uhr-bg {
     background-color: var(--color-uhr-bg);
   }
-  .bg-uhr-bg\/80 {
-    background-color: color-mix(in srgb, hsl(0, 0%, 98%) 80%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-uhr-bg) 80%, transparent);
-    }
-  }
   .bg-white {
     background-color: var(--color-white);
   }
