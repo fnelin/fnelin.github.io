@@ -5,134 +5,173 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>FredrikN · Developer Portfolio</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="stylesheet" href="basic.css">
+
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="global.css">
     </head>
 
-    <body>
-        <header>
-            <div class="containerHeader">
-                <span>
-                    <img src="./pictures/fnelin_logo.svg" alt="FNelin Logo" />
-                </span>
+    <body class="bg-uhr-bg text-uhr-text font-sans">
+
+        <header class="sticky top-0 z-20 overflow-hidden backdrop-blur">
+
+            <div class="absolute inset-0 bg-linear-to-l rounded-b-4xl from-uhr-primary/5 to-uhr-primary/20"></div>
+            <div class="absolute left-22 top-0 w-20 h-20 opacity-10 animate-dive-ellipse">
+                <div class="w-full h-full transition-transform duration-0 origin-center animate-dive-flip">
+                    <svg viewBox="0 0 50 50" class="w-full h-full text-uhr-primary">
+                        <path
+                            d="M1 5l7.617 7.893 2.927-2.664-2.65-5.205zm34.336 22.108c1.439.402 2.988-.424 3.396-1.909.395-1.458-.445-2.991-1.898-3.405l-1.127-.315-1.463 5.302 1.092.327zm-.887-5.97l-9.115-2.603c-.6-.158-1.205.208-1.374.815l-.852 3.089c-.167.608.156 1.228.768 1.411l9.122 2.579 1.451-5.291zm1.438 8.781c-.695-.669-1.559-1.204-2.564-1.484l-11.053-3.137-6.79-12.21c-.36-.632-.936-1.131-1.68-1.338-1.488-.425-3.036.462-3.443 1.97-.204.718-.108 1.447.216 2.067l8.494 15.104s.696 1.131 2.447 1.716l15.442 4.391 7.162 7.369c.24.255.553.449.924.56 1.08.304 2.207-.354 2.52-1.437.205-.765-.035-1.568-.576-2.067l-11.099-11.504zm8.244 3.053l1.605 2.128 3.264-3.613-2.758-1.558c.262-1.958-.938-3.854-2.857-4.401-2.111-.597-4.307.644-4.893 2.785-.602 2.153.635 4.365 2.746 4.962 1.008.291 2.028.133 2.893-.303z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-6xl mx-auto w-full flex items-center justify-between px-4 sm:px-6 py-4">
+                <img src="./pictures/fnelin_logo.svg" alt="FNelin Logo" class="h-10 w-auto">
                 <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
+                    <ul class="flex gap-6 text-sm text-uhr-text">
+                        <li class="hover:text-uhr-primary cursor-pointer transition">Home</li>
+                        <li class="hover:text-uhr-primary cursor-pointer transition">About</li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <aside>
+
+        <main
+            class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[20rem_1fr] gap-6 lg:gap-8 p-4 sm:p-6 lg:p-8">
+
+            <!-- SIDEBAR (desktop only structure) -->
+            <aside class="order-2 lg:order-1 space-y-6">
+
+                <!-- CONTACT (single source of truth) -->
+                <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                    <h2 class="text-xl font-semibold mb-3">📬 contact</h2>
+
+                    <p class="text-sm text-uhr-text-muted leading-relaxed">
+                        Feel free to reach out for collaborations, questions, or just to say hi! I'm always open to
+                        connecting with fellow developers and enthusiasts.
+                    </p>
+
+                    <a href="mailto:fredrik.nelin@outlook.com"
+                        class="mt-4 inline-block text-uhr-primary hover:underline text-sm">
+                        Email me
+                    </a>
+                </div>
 
             </aside>
-            <div class="container">
-                <div class="hero">
-                    <div class="avatar">
-                        <img style="border-radius:50%" src="https://github.com/fnelin.png" width="100" height="100" />
+
+            <section class="order-1 lg:order-2 space-y-10 lg:space-y-12">
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+
+                    <img src="https://github.com/fnelin.png"
+                        class="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-uhr-border">
+
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold">F.Nelin</h1>
+
+                        <p class="text-sm sm:text-base text-uhr-text-muted mt-1">
+                            Building tools, prototypes, and full-stack experiments.
+                        </p>
+
+                        <div class="flex flex-wrap gap-4 sm:gap-6 mt-3 text-sm text-uhr-primary">
+                            <a href="#" class="hover:underline">🐙 GitHub</a>
+                            <a href="#" class="hover:underline">🔗 LinkedIn</a>
+                            <a href="#" class="hover:underline">📧 Email</a>
+                        </div>
                     </div>
-                    <h1>F.Nelin</h1>
-                    <div class="tagline">
-                        Building tools, prototypes, and full‑stack experiments.
-                        <br>From static HTML → Node.js + TypeScript + Prisma.
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/fnelin" target="_blank">🐙 GitHub</a>
-                        <a href="https://linkedin.com/in/fnelin" target="_blank">🔗 LinkedIn</a>
-                        <a href="mailto:fredrik.nelin@outlook.com">📧 fredrik.nelin@outlook.com</a>
-                    </div>
+
                 </div>
-                <div class="section">
-                    <div class="section-title">⚡ currently cooking</div>
-                    <div class="projects-grid">
-                        <div class="project-card" style="background: linear-gradient(145deg, #ffffff, #faf5ff);">
-                            <div class="project-title">
-                                🧩 A Small Teacher PoC
-                                <span class="badge">PoC</span>
-                            </div>
-                            <div class="project-desc">
-                                PoC app of reverse calculator inspired by The Little Professor by Texas Instruments.
-                            </div>
-                            <a href="/asmallteacher/" class="project-link">→ view prototype</a>
-                            <div class="tech-stack">
-                                <span class="tech">HTML5</span>
-                                <span class="tech">Javascript</span>
-                                <span class="tech">Tailwind</span>
-                            </div>
+
+                <div class="space-y-6">
+
+                    <h2 class="text-xl font-semibold">⚡ currently cooking</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                            <h3 class="font-semibold mb-2">🧩 A Small Teacher PoC</h3>
+                            <p class="text-sm text-uhr-text-muted mb-4">
+                                Reverse calculator inspired by The Little Professor.
+                            </p>
+                            <a class="text-uhr-primary hover:underline text-sm">→ view prototype</a>
                         </div>
-                        <div class="project-card">
-                            <div class="project-title">
-                                🚀 Node.js + TS
-                                <span class="badge">in dev</span>
-                            </div>
-                            <div class="project-desc">
-                                Migrating the prototype to TypeScript backend, Express, Tailwind CSS,
-                                and Prisma ORM. Will be deployed on Render / Vercel.
-                            </div>
-                            <a href="#" class="project-link" style="opacity:0.7; pointer-events:none;">🔨 coming
-                                soon</a>
-                            <div class="tech-stack">
-                                <span class="tech">Node.js</span>
-                                <span class="tech">TypeScript</span>
-                                <span class="tech">Tailwind</span>
-                                <span class="tech">Prisma</span>
-                            </div>
+
+                        <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                            <h3 class="font-semibold mb-2">🚀 Node.js + TS</h3>
+                            <p class="text-sm text-uhr-text-muted mb-4">
+                                Backend migration with TypeScript, Express, Prisma.
+                            </p>
+                            <span class="text-sm text-uhr-text-muted opacity-60">coming soon</span>
                         </div>
+
                     </div>
+
                 </div>
-                <div class="section">
-                    <div class="section-title">📁 Lexicon frontend developer course subprojects</div>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-title">🌻 Planned planthood</div>
-                            <div class="project-desc">Excersize in semantic HTML5 and modern CSS</div>
-                            <a href="/" class="project-link">explore →</a>
+
+                <div class="space-y-6">
+
+                    <h2 class="text-xl font-semibold">📁 Lexicon projects</h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                            <h3 class="font-semibold mb-2">🌻 Planthood</h3>
+                            <p class="text-sm text-uhr-text-muted mb-3">Semantic HTML/CSS</p>
+                            <a class="text-uhr-primary hover:underline text-sm">explore →</a>
                         </div>
-                        <div class="project-card">
-                            <div class="project-title">💬 Reviews and thoughts</div>
-                            <div class="project-desc">A solo portfolio project showcasing html/css and typescript skills
-                            </div>
-                            <a href="/" class="project-link">explore →</a>
+
+                        <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                            <h3 class="font-semibold mb-2">💬 Reviews</h3>
+                            <p class="text-sm text-uhr-text-muted mb-3">Portfolio project</p>
+                            <a class="text-uhr-primary hover:underline text-sm">explore →</a>
                         </div>
-                        <div class="project-card">
-                            <div class="project-title">📝 future blog / notes</div>
-                            <div class="project-desc">Markdown to HTML static zone. Will be used for documenting the
-                                Node
-                                migration steps.</div>
-                            <a href="#" class="project-link" style="opacity:0.7; pointer-events:none;">🔨 coming
-                                soon</a>
+
+                        <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+                            <h3 class="font-semibold mb-2">📝 Blog</h3>
+                            <p class="text-sm text-uhr-text-muted mb-3">Markdown system</p>
+                            <span class="text-sm text-uhr-text-muted opacity-60">coming soon</span>
                         </div>
+
                     </div>
+
                 </div>
-                <div class="section">
-                    <div class="section-title">🧭 roadmap</div>
-                    <div
-                        style="background: #ffffff; border-radius: 1.5rem; padding: 1.5rem; border: 1px solid #eef2ff;">
-                        <ul
-                            style="margin-left: 1.4rem; color: #1e293b; display: flex; flex-direction: column; gap: 0.8rem;">
-                            <li>✅ <strong>Phase 0:</strong> static HTML/CSS POC hosted on GitHub Pages (root +
-                                subfolders)
-                            </li>
-                            <li>🔄 <strong>Phase 1:</strong> set up Node.js + TypeScript + Tailwind local environment
-                            </li>
-                            <li>⏳ <strong>Phase 2:</strong> integrate Prisma + PostgreSQL (Neon / Supabase free tier)
-                            </li>
-                            <li>🔜 <strong>Phase 3:</strong> deploy full-stack app on Render (or Vercel with serverless
-                                functions)</li>
-                            <li>✨ <strong>Phase 4:</strong> custom domain + CI from GitHub actions</li>
+
+                <div class="space-y-4">
+
+                    <h2 class="text-xl font-semibold">🧭 roadmap</h2>
+
+                    <div class="bg-white rounded-2xl p-6 border border-uhr-border">
+
+                        <ul class="space-y-3 text-sm">
+
+                            <li>✅ Phase 0: static HTML/CSS</li>
+                            <li>🔄 Phase 1: Node + TS + Tailwind</li>
+                            <li>⏳ Phase 2: Prisma + DB</li>
+                            <li>🔜 Phase 3: Deploy</li>
+                            <li>✨ Phase 4: CI/CD + domain</li>
+
                         </ul>
+
                     </div>
+
                 </div>
-            </div>
+
+            </section>
+
         </main>
+
         <footer>
-            ✨ built with vanilla HTML/CSS • hosted on GitHub Pages • future‑proof for TypeScript + Prisma
-            <br>
-            <span style="font-size:0.75rem;">© 2025 — template ready for <code>/fnelin.github.io</code>
-                root</span>
+            <div
+                class="w-full h-full bg-linear-to-l from-uhr-primary/5 to-uhr-primary/25 opacity-100 -z-10 rounded-t-4xl">
+                <p class="text-xs text-center text-uhr-text-muted py-8 px-4">
+                    ✨ built with vanilla HTML/TailwindCSS • GitHub Pages • future TypeScript stack
+                    <br>
+                    © 2026 - fnelin.github.io
+                </p>
+            </div>
         </footer>
     </body>
 
